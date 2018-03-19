@@ -1,0 +1,23 @@
+#homepage{
+  background: $primary_color;
+  font-family: $font;
+  p{
+    color: red;
+  }
+
+  form{
+    input{
+      &:nth-child(2n)
+      {
+        @include form-input(100px);
+      }
+
+      &[type="submit"]{
+        @include form-submit();
+      }
+
+
+    }
+  }
+
+}
